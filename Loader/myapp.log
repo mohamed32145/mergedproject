@@ -1,0 +1,98 @@
+2024-04-27T23:40:25.419+03:00  INFO 7232 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 7232 (C:\Users\mohamad\OneDrive\Desktop\java_microservices_final_project\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\java_microservices_final_project\Loader)
+2024-04-27T23:40:25.526+03:00  INFO 7232 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-27T23:40:27.722+03:00  INFO 7232 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-27T23:40:27.893+03:00  INFO 7232 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 1 JPA repository interface.
+2024-04-27T23:40:29.850+03:00  INFO 7232 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-27T23:40:29.882+03:00  INFO 7232 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-27T23:40:29.882+03:00  INFO 7232 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-27T23:40:30.049+03:00  INFO 7232 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-27T23:40:30.051+03:00  INFO 7232 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4341 ms
+2024-04-27T23:40:31.163+03:00  INFO 7232 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-27T23:40:31.536+03:00  INFO 7232 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-27T23:40:31.650+03:00  INFO 7232 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-27T23:40:32.421+03:00  INFO 7232 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-27T23:40:32.499+03:00  INFO 7232 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-27T23:40:33.060+03:00  INFO 7232 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@135064ea
+2024-04-27T23:40:33.071+03:00  INFO 7232 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-27T23:40:33.331+03:00  WARN 7232 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-27T23:40:33.334+03:00  WARN 7232 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-27T23:40:35.638+03:00  INFO 7232 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-27T23:40:35.836+03:00  INFO 7232 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-27T23:40:37.000+03:00  WARN 7232 --- [Loader] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'markertingDataController': Unsatisfied dependency expressed through field 'marketingDataFacebookService': No qualifying bean of type 'com.tsfn.Loader.service.MarketingDataFacebookService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-04-27T23:40:37.001+03:00  INFO 7232 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-27T23:40:37.009+03:00  INFO 7232 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-27T23:40:37.032+03:00  INFO 7232 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-27T23:40:37.036+03:00  INFO 7232 --- [Loader] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-27T23:40:37.082+03:00  INFO 7232 --- [Loader] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-27T23:40:37.155+03:00 ERROR 7232 --- [Loader] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field marketingDataFacebookService in com.tsfn.Loader.controller.MarkertingDataController required a bean of type 'com.tsfn.Loader.service.MarketingDataFacebookService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.tsfn.Loader.service.MarketingDataFacebookService' in your configuration.
+
+2024-04-27T23:41:44.778+03:00  INFO 17112 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 17112 (C:\Users\mohamad\OneDrive\Desktop\java_microservices_final_project\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\java_microservices_final_project\Loader)
+2024-04-27T23:41:44.782+03:00  INFO 17112 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-27T23:41:46.940+03:00  INFO 17112 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-27T23:41:47.081+03:00  INFO 17112 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2024-04-27T23:41:48.937+03:00  INFO 17112 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-27T23:41:48.972+03:00  INFO 17112 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-27T23:41:48.973+03:00  INFO 17112 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-27T23:41:49.130+03:00  INFO 17112 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-27T23:41:49.132+03:00  INFO 17112 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4217 ms
+2024-04-27T23:41:49.967+03:00  INFO 17112 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-27T23:41:50.295+03:00  INFO 17112 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-27T23:41:50.448+03:00  INFO 17112 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-27T23:41:51.313+03:00  INFO 17112 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-27T23:41:51.462+03:00  INFO 17112 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-27T23:41:52.000+03:00  INFO 17112 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b8b2184
+2024-04-27T23:41:52.005+03:00  INFO 17112 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-27T23:41:52.112+03:00  WARN 17112 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-27T23:41:52.116+03:00  WARN 17112 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-04-27T23:41:54.327+03:00  INFO 17112 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-27T23:41:54.444+03:00  INFO 17112 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-27T23:41:55.844+03:00  WARN 17112 --- [Loader] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-27T23:41:56.994+03:00  INFO 17112 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-27T23:41:57.038+03:00  INFO 17112 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Started LoaderApplication in 13.537 seconds (process running for 22.505)
+2024-04-27T23:42:03.012+03:00  INFO 17112 --- [Loader] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-27T23:42:03.012+03:00  INFO 17112 --- [Loader] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-27T23:42:03.015+03:00  INFO 17112 --- [Loader] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-27T23:42:03.200+03:00  INFO 17112 --- [Loader] [http-nio-8080-exec-2] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:42:03.201+03:00  INFO 17112 --- [Loader] [http-nio-8080-exec-2] c.t.L.s.MarketingDataFacebookService     : got to thread creation in scan
+2024-04-27T23:42:03.209+03:00  INFO 17112 --- [Loader] [http-nio-8080-exec-2] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_42_03
+2024-04-27T23:42:05.764+03:00  WARN 17112 --- [Loader] [pool-4-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: S1009
+2024-04-27T23:42:05.764+03:00 ERROR 17112 --- [Loader] [pool-4-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : 'NaN' is not a valid numeric or approximate numeric value
+2024-04-27T23:42:07.041+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:42:07.045+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_42_07
+2024-04-27T23:42:17.041+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:42:17.043+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_42_17
+2024-04-27T23:42:27.043+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:42:27.045+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_42_27
+2024-04-27T23:42:37.040+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:42:37.041+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_42_37
+2024-04-27T23:42:47.042+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:42:47.045+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_42_47
+2024-04-27T23:42:57.038+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:42:57.039+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_42_57
+2024-04-27T23:43:07.042+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:43:07.043+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_43_07
+2024-04-27T23:43:17.047+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:43:17.050+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_43_17
+2024-04-27T23:43:27.044+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : started Hourly Facebook scan.
+2024-04-27T23:43:27.047+03:00  INFO 17112 --- [Loader] [scheduling-1] c.t.L.s.MarketingDataFacebookService     : Hourly facebook scan finished. last modified scan time is 2024_04_27T23_43_27
+2024-04-27T23:43:30.188+03:00  INFO 17112 --- [Loader] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-27T23:43:30.194+03:00  INFO 17112 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-27T23:43:30.230+03:00  INFO 17112 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

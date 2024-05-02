@@ -1,0 +1,39 @@
+
+L
+java:S10663"/Merge this if statement with the enclosing one.(¦†•Í8ìƒäÑñ1
+L
+java:S1066N"/Merge this if statement with the enclosing one.(¦†•Í8ìƒäÑñ1
+T
+java:S2629["7Use the built-in formatting to construct this argument.(¹£“»8ðƒäÑñ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ¹ÕÀýÿÿÿÿ8òƒäÑñ1
+j
+java:S2095("MUse try-with-resources or close this "ExecutorService" in a "finally" clause.(—¡Ù£8ƒÏ¢Òñ1
+j
+java:S2095C"MUse try-with-resources or close this "ExecutorService" in a "finally" clause.(á¤Éü8„Ï¢Òñ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8†Ï¢Òñ1
+a
+java:S1124#"EReorder the modifiers to comply with the Java Language Specification.(Í¦—8”Ï¢Òñ1
+o	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆû÷¡ÿÿÿÿÿ8žÏ¢Òñ1
+t
+java:S3776&"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ˆû÷¡ÿÿÿÿÿ8 Ï¢Òñ1
+]	java:S1255"<This block of commented-out lines of code should be removed.(ö÷¼Äÿÿÿÿÿ8¬Ï¢Òñ1
+]	java:S125P"<This block of commented-out lines of code should be removed.(ö÷¼Äÿÿÿÿÿ8ÖÏ¢Òñ1
+S
+java:S2696Z"6Make the enclosing method "static" or remove this set.(ºŸíô8ØÏ¢Òñ1
+^
+java:S3457["AFormat specifiers should be used instead of string concatenation.(¹£“»8ÜÏ¢Òñ1
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8ÅÍÆÒñ1
+S
+java:S1128"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ8ÅÍÆÒñ1
+T
+java:S1128"7Remove this unused import 'java.net.HttpURLConnection'.(¬¬˜­8ÆÍÆÒñ1
+X
+java:S1128";Remove this unused import 'java.net.MalformedURLException'.(ªËÞˆ8ÆÍÆÒñ1
+K
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8ÆÍÆÒñ1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÇÍÆÒñ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÇÍÆÒñ1

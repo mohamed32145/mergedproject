@@ -1,0 +1,6 @@
+
+m	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆáû”8·ÉçÛğ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( ‹šÄ8Ç‘ßÛğ1
+s	java:S116"RRename this field "data_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç¥³Ñùÿÿÿÿ8Í‘ßÛğ1
+x	java:S116"WRename this field "content_Type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õã®şÿÿÿÿ8Í‘ßÛğ1
+^	java:S107$"BConstructor has 12 parameters, which is greater than 7 authorized.(ˆáû”8ÀÉçÛğ1

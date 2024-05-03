@@ -1,0 +1,25 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸ïÚúÿÿÿÿ8ª½œ©ò1
+^
+java:S34570"AFormat specifiers should be used instead of string concatenation.(‹çî—8é½œ©ò1
+;
+java:S1128"Remove this duplicated import.(µ‹Ï€8ó½œ©ò1
+T
+java:S1128"7Remove this unused import 'com.twilio.http.HttpMethod'.(ÂÖÅì8ÉÍÀ©ò1
+@
+java:S1128"Remove this duplicated import.(ï’œïşÿÿÿÿ8ô½œ©ò1
+;
+java:S1128	"Remove this duplicated import.(µ‹Ï€8ÊÍÀ©ò1
+@
+java:S1128
+"Remove this duplicated import.(ï’œïşÿÿÿÿ8ÊÍÀ©ò1
+W
+java:S1128"5Remove this unused import 'com.twilio.http.Response'.(úßÚ˜úÿÿÿÿ8ÊÍÀ©ò1
+@
+java:S1128"Remove this duplicated import.(Øâà‡ıÿÿÿÿ8ô½œ©ò1
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ËÍÀ©ò1
+F
+java:S1128")Remove this unused import 'java.net.URI'.(Ö¦¨°8ËÍÀ©ò1
+Z
+java:S1128"8Remove this unused import 'java.net.URISyntaxException'.(Ä®íÿÿÿÿÿ8ÌÍÀ©ò1

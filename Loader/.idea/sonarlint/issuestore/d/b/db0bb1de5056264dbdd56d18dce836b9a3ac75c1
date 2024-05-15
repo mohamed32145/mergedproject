@@ -20,7 +20,7 @@ _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ºÓ“Šò1
 X
 java:S3416#";Update this logger to use "MarkertingDataController.class".(÷ªªÙ8½Ó“Šò1
-C
-java:S1452*"&Remove usage of generic wildcard type.(˜áÅ¤8ÉÓ“Šò1
+t
+java:S1128"WRemove this unused import 'org.springframework.scheduling.annotation.EnableScheduling'.(‹æ¬‹8äñ¢–÷1
 G
 java:S1068#"*Remove this unused "logger" private field.(÷ªªÙ8àÓ“Šò1

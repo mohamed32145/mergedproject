@@ -5,6 +5,8 @@ import com.tsfn.Loader.model.MarketingData;
 import com.tsfn.Loader.repository.MarketingDataRepository;
 import lombok.Getter;
 import lombok.Setter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileReader;
@@ -14,6 +16,7 @@ import java.util.*;
 @Getter
 public class InstgramThread implements Runnable{
     private MarketingDataRepository marketingDataRepository;
+    private static final Logger logger = LoggerFactory.getLogger(LinkedInThread.class);
 
     private File myfile;
     public InstgramThread(File myfile,MarketingDataRepository marketingDataRepository) {
@@ -32,7 +35,7 @@ public class InstgramThread implements Runnable{
             csvReader.readNext();
             while ((values = csvReader.readNext()) != null) {
                 for (int i = 0; i < values.length; i++)
-                    if (values[i] == null || values[i].compareTo("")==0)
+                    if (values[i].equals("NaN")||values[i]==null|| values[i].isEmpty())
                         values[i] = "0";
                 records.add(Arrays.asList(values));
             }
@@ -41,8 +44,9 @@ public class InstgramThread implements Runnable{
             e.printStackTrace();
         }
         for (List<String> dataunit : records) {
-            Optional<MarketingData> checkifexist = marketingDataRepository.findByPostidAndAccount(dataunit.get(1), account_id);
+            Optional<MarketingData> checkifexist = marketingDataRepository.findByPostidAndAccount(dataunit.get(0), account_id);
             MarketingData marketingData = null;
+            logger.info(dataunit.get(0)+" "+ account_id);
             if (!checkifexist.isPresent()) {
                 String post_Id=dataunit.get(0);
                 String content_Type=dataunit.get(8);
@@ -67,6 +71,7 @@ public class InstgramThread implements Runnable{
                 founddata.setClickThroughRate((double) Integer.parseInt(dataunit.get(17)) /Integer.parseInt(dataunit.get(11)));
                 founddata.setEngagementRate(((double)(Integer.parseInt(dataunit.get(15))+Integer.parseInt(dataunit.get(16))
                         +Integer.parseInt(dataunit.get(13)))/Integer.parseInt(dataunit.get(12))));
+                founddata.setTimeStamp(timeStamp);
                 marketingDataRepository.save(founddata);
             }
         }

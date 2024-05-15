@@ -31,7 +31,7 @@ public class FacebookThread implements Runnable{
             //csvReader.readNext();
             while ((values = csvReader.readNext()) != null) {
                 for (int i = 0; i < values.length; i++)
-                    if (values[i] == null || values[i].compareTo("")==0)
+                    if (values[i].equals("NaN")||values[i]==null|| values[i].isEmpty())
                         values[i] = "0";
                 records.add(Arrays.asList(values));
             }
@@ -40,7 +40,7 @@ public class FacebookThread implements Runnable{
             e.printStackTrace();
         }
         for (List<String> dataunit : records) {
-            Optional<MarketingData> checkifexist = marketingDataRepository.findByPostidAndAccount(dataunit.get(1), account_id);
+            Optional<MarketingData> checkifexist = marketingDataRepository.findByPostidAndAccount(dataunit.get(0), account_id);
             MarketingData marketingData = null;
             if (!checkifexist.isPresent()) {
                 String post_Id=dataunit.get(0);
@@ -48,11 +48,15 @@ public class FacebookThread implements Runnable{
                 int impression=Integer.parseInt(dataunit.get(17));
                 int views = Integer.parseInt(dataunit.get(18));
                 int clicks=Integer.parseInt(dataunit.get(24));
-                double clickTR= ((double) clicks) /impression;
+                double clickTR=0;
+                if(impression!=0)
+                    clickTR= ((double) clicks) /impression;
                 int likes=Integer.parseInt(dataunit.get(21));
                 int comments=Integer.parseInt(dataunit.get(22));
                 int shares=Integer.parseInt(dataunit.get(23));
-                double engagmentRate=((double)(Integer.parseInt(dataunit.get(20)))/views);
+                double engagmentRate=0;
+                if (views!=0)
+                 engagmentRate=((double)(Integer.parseInt(dataunit.get(20)))/views);
                 marketingData = new MarketingData(account_id, timeStamp, post_Id, content_Type,impression , views,clicks
                         , clickTR,likes , comments, shares, engagmentRate);
                 marketingDataRepository.save(marketingData);
@@ -63,8 +67,15 @@ public class FacebookThread implements Runnable{
                 founddata.setLikes(Integer.parseInt(dataunit.get(21)));
                 founddata.setImpressions(Integer.parseInt(dataunit.get(17)));
                 founddata.setShares(Integer.parseInt(dataunit.get(23)));
-                founddata.setClickThroughRate((double) Integer.parseInt(dataunit.get(24)) /Integer.parseInt(dataunit.get(17)));
-                founddata.setEngagementRate(((double)(Integer.parseInt(dataunit.get(20)))/Integer.parseInt(dataunit.get(12))));
+                if (Integer.parseInt(dataunit.get(17))!=0)
+                    founddata.setClickThroughRate((double) Integer.parseInt(dataunit.get(24)) /Integer.parseInt(dataunit.get(17)));
+                else
+                    founddata.setClickThroughRate(0.0);
+                if (Integer.parseInt(dataunit.get(12))!=0)
+                    founddata.setEngagementRate(((double)(Integer.parseInt(dataunit.get(20)))/Integer.parseInt(dataunit.get(12))));
+                else
+                    founddata.setEngagementRate(0.0);
+                founddata.setTimeStamp(timeStamp);
                 marketingDataRepository.save(founddata);
             }
         }

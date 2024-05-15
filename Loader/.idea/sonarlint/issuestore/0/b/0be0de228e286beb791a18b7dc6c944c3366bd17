@@ -7,9 +7,9 @@ T
 java:S2629Q"7Use the built-in formatting to construct this argument.(ªñ¼é8ìã†Šò1
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ¹ÕÀýÿÿÿÿ
 j
-java:S2095"MUse try-with-resources or close this "ExecutorService" in a "finally" clause.(—¡Ù£8ÿ°©Šò1
-j
 java:S20959"MUse try-with-resources or close this "ExecutorService" in a "finally" clause.(á¤Éü8€±©Šò1
+j
+java:S2095"MUse try-with-resources or close this "ExecutorService" in a "finally" clause.(—¡Ù£8ÿ°©Šò1
 _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8®ê†Šò1
 g

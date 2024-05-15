@@ -39,7 +39,7 @@ public class MarkertingDataController implements SchedulingConfigurer {
 
     }
     @PostMapping("/manual-run/{loaderName}")
-    public ResponseEntity<?> scanfiles(@PathVariable String loaderName,
+    public ResponseEntity<String> scanfiles(@PathVariable String loaderName,
                                        @RequestBody LoaderRequest loaderRequest){
         try {
             if (loaderName.compareTo("linkedin")==0) {
@@ -79,7 +79,7 @@ public class MarkertingDataController implements SchedulingConfigurer {
         return ResponseEntity.ok("Scans not enabled for loader: " + loaderName);
     }
 
-    @Scheduled(fixedRate = 10000) // Run every 10 seconds
+    @Scheduled(fixedRate = 1000*3600) // Run every 10 seconds
     public void scheduledTask() {
         if (isLinkedInTimerOn) {
             marketingDataLinkedInService.hourlyLinkedInScan();

@@ -20,6 +20,7 @@ public class EmailService{
 	public String sendSimpleMail(@RequestBody EmailDetails details)
 	{
 
+
 			SimpleMailMessage mailMessage = new SimpleMailMessage();
 
 			mailMessage.setFrom(sender);
@@ -30,6 +31,6 @@ public class EmailService{
 			javaMailSender.send(mailMessage);
 			System.out.println("email sent");
 			return "Mail Sent Successfully...";
-		}
+	}
 
 }

@@ -18,10 +18,10 @@ public class KafkaConsumerImpl {
 	@Autowired
 	SMSSenderRequestParser parser;
 
-	@KafkaListener(topics = "TEST1" , groupId = "groupId")
+	@KafkaListener(topics = "ail" , groupId = "groupId")
 	public void listen(String message)
 	{
-		
+		System.out.println("recived message is: "+message);
 		EmailDetails emaildetails=parser.parse(message);
 		//fix the messge 
 		//EmailDetails emaildetails =new EmailDetails("aseelk5@gmail.com",message,"a",null);

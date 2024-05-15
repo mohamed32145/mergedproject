@@ -20,7 +20,7 @@ public class LoaderApplication {
 
 	public static void main(String[] args) {
 		String repoUrl = "https://github.com/fadykittan/tsofen_project_data_files.git";
-		String localPath = "C:/Users/mohamad/OneDrive/Desktop/java_microservices_final_project/data2";
+		String localPath = "src/main/resources/data";
 
 		try {
 			FileUtils.deleteDirectory(new File(localPath));

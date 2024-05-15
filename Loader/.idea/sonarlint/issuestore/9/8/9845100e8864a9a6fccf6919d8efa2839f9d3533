@@ -1,8 +1,6 @@
 
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³¯ÚØ8ÿˆ‰Óñ1
 ^
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(ÏñÅ8á¢ÏÓñ1
-^
 java:S3457"AFormat specifiers should be used instead of string concatenation.(ì¡¡©8¿‰‰Óñ1
 ^
 java:S3457'"AFormat specifiers should be used instead of string concatenation.(¡â­8Ã‰‰Óñ1

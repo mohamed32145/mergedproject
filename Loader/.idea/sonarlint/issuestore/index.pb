@@ -23,5 +23,5 @@ w
 Gsrc/main/java/com/tsfn/Loader/service/MarketingDataInstgramService.java,9\7\97d60730db17c9ba691aec6f889071a35f270b19
 w
 Gsrc/main/java/com/tsfn/Loader/service/MarketingDataFacebookService.java,0\b\0be0de228e286beb791a18b7dc6c944c3366bd17
-g
-7src/main/java/com/tsfn/Loader/config/OpenAPIConfig.java,b\9\b9bf7c3a0843971139a04c70885c487942fa2b6b
+y
+Isrc/main/java/com/tsfn/Loader/feignclient/SecurityServiceFeignClient.java,d\f\df36ba94441058fde50d93b326f4940f0a403aff

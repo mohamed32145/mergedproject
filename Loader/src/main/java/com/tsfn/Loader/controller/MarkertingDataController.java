@@ -1,5 +1,6 @@
 package com.tsfn.Loader.controller;
 
+import com.tsfn.Loader.feignclient.SecurityServiceFeignClient;
 import com.tsfn.Loader.service.MarketingDataFacebookService;
 import com.tsfn.Loader.service.MarketingDataInstgramService;
 import com.tsfn.Loader.service.MarketingDataLinkedInService;
@@ -14,6 +15,7 @@ import org.springframework.scheduling.annotation.SchedulingConfigurer;
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
 @RestController
@@ -28,6 +30,9 @@ public class MarkertingDataController implements SchedulingConfigurer {
     @Autowired
     private MarketingDataFacebookService marketingDataFacebookService;
 
+    @Autowired
+    private SecurityServiceFeignClient securityServiceFeignClient;
+
     private  boolean isLinkedInTimerOn = false;
     private  boolean isInstgramInTimerOn = false;
     private  boolean isFacebookInTimerOn = false;
@@ -39,8 +44,13 @@ public class MarkertingDataController implements SchedulingConfigurer {
 
     }
     @PostMapping("/manual-run/{loaderName}")
-    public ResponseEntity<String> scanfiles(@PathVariable String loaderName,
+    public ResponseEntity<String> scanfiles(@RequestHeader("Authorization") String token,@PathVariable String loaderName,
                                        @RequestBody LoaderRequest loaderRequest){
+        if(!securityServiceFeignClient.validateToken(token))
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid or expired token");
+        List<String> roles=securityServiceFeignClient.getUserRoles(token);
+        if(!roles.contains("ADMIN")&&!roles.contains("TRIGGER_MANUAL_SCAN"))
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid or expired token");
         try {
             if (loaderName.compareTo("linkedin")==0) {
                 marketingDataLinkedInService.linked_In_Manual_Run(loaderRequest);

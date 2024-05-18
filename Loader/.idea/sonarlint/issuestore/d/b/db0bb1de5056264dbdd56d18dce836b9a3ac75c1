@@ -1,26 +1,26 @@
 
 y
-java:S1192f"\Define a constant instead of duplicating this literal "Scans disabled for loader: " 3 times.(š…ûä8”µ Šò1
+java:S1192p"\Define a constant instead of duplicating this literal "Scans disabled for loader: " 3 times.(š…ûä8õãîîø1
 f
-java:S11923"IDefine a constant instead of duplicating this literal "facebook" 3 times.(øå¢ç8•µ Šò1
+java:S1192="IDefine a constant instead of duplicating this literal "facebook" 3 times.(øå¢ç8öãîîø1
 k
-java:S1192-"IDefine a constant instead of duplicating this literal "linkedin" 3 times.(÷”ĞÎüÿÿÿÿ8‡Ó“Šò1
+java:S11927"IDefine a constant instead of duplicating this literal "linkedin" 3 times.(÷”ĞÎüÿÿÿÿ8öãîîø1
 }
-java:S1192C"[Define a constant instead of duplicating this literal "Scans enabled for loader: " 3 times.(Ã¾»˜ûÿÿÿÿ8ß¡Šò1
+java:S1192M"[Define a constant instead of duplicating this literal "Scans enabled for loader: " 3 times.(Ã¾»˜ûÿÿÿÿ8öãîîø1
 f
-java:S11920"IDefine a constant instead of duplicating this literal "Instgram" 3 times.(ÑŸÿì8ˆÓ“Šò1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—îÉ®8‹Ó“Šò1
+java:S1192:"IDefine a constant instead of duplicating this literal "Instgram" 3 times.(ÑŸÿì8÷ãîîø1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—îÉ®8úãîîø1
 
-java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñ–Ş¢8¹Ó“Šò1
+java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñ–Ş¢8¹äîîø1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ºÓ“Šò1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ºäîîø1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ºÓ“Šò1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ºäîîø1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ºÓ“Šò1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ºäîîø1
+_
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8ºäîîø1
 X
-java:S3416#";Update this logger to use "MarkertingDataController.class".(÷ªªÙ8½Ó“Šò1
-t
-java:S1128"WRemove this unused import 'org.springframework.scheduling.annotation.EnableScheduling'.(‹æ¬‹8äñ¢–÷1
+java:S3416(";Update this logger to use "MarkertingDataController.class".(÷ªªÙ8ºäîîø1
 G
-java:S1068#"*Remove this unused "logger" private field.(÷ªªÙ8àÓ“Šò1
+java:S1068("*Remove this unused "logger" private field.(÷ªªÙ8Ñäîîø1

@@ -1,65 +1,159 @@
-2024-05-15T21:05:35.867+03:00  INFO 8548 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 8548 (C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader)
-2024-05-15T21:05:35.971+03:00  INFO 8548 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-15T21:05:40.858+03:00  INFO 8548 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-15T21:05:41.075+03:00  INFO 8548 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 1 JPA repository interface.
-2024-05-15T21:05:44.739+03:00  INFO 8548 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
-2024-05-15T21:05:44.801+03:00  INFO 8548 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-15T21:05:44.802+03:00  INFO 8548 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-05-15T21:05:45.118+03:00  INFO 8548 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-15T21:05:45.120+03:00  INFO 8548 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8903 ms
-2024-05-15T21:05:46.123+03:00  INFO 8548 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-15T21:05:46.556+03:00  INFO 8548 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-15T21:05:46.762+03:00  INFO 8548 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-15T21:05:47.930+03:00  INFO 8548 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-15T21:05:48.053+03:00  INFO 8548 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-15T21:05:48.786+03:00  INFO 8548 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60844992
-2024-05-15T21:05:48.793+03:00  INFO 8548 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-15T21:05:48.983+03:00  WARN 8548 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-05-15T21:05:48.988+03:00  WARN 8548 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2024-05-15T21:05:53.064+03:00  INFO 8548 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-15T21:05:53.304+03:00  INFO 8548 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-15T21:05:55.647+03:00  WARN 8548 --- [Loader] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-15T21:06:00.412+03:00  INFO 8548 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
-2024-05-15T21:06:00.586+03:00  INFO 8548 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Started LoaderApplication in 26.799 seconds (process running for 36.553)
-2024-05-15T21:06:13.610+03:00  INFO 8548 --- [Loader] [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-15T21:06:13.610+03:00  INFO 8548 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-15T21:06:13.612+03:00  INFO 8548 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-05-15T21:06:14.929+03:00  INFO 8548 --- [Loader] [http-nio-7070-exec-1] c.t.L.s.MarketingDataInstgramService     : got to thread creation
-2024-05-15T21:06:16.832+03:00  INFO 8548 --- [Loader] [pool-4-thread-1] c.t.L.service.Threads.LinkedInThread     : 17905447226460409 2103
-2024-05-15T21:06:17.161+03:00  INFO 8548 --- [Loader] [pool-4-thread-1] c.t.L.service.Threads.LinkedInThread     : 17881403072527078 2103
-2024-05-15T21:06:17.338+03:00  INFO 8548 --- [Loader] [pool-4-thread-1] c.t.L.service.Threads.LinkedInThread     : 17968017811546662 2103
-2024-05-15T21:06:17.439+03:00  INFO 8548 --- [Loader] [pool-4-thread-1] c.t.L.service.Threads.LinkedInThread     : 17998437364400456 2103
-2024-05-15T21:06:47.801+03:00  INFO 8548 --- [Loader] [http-nio-7070-exec-2] c.t.L.s.MarketingDataFacebookService     : got to thread creation
-2024-05-15T21:15:01.139+03:00  INFO 8548 --- [Loader] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-15T21:15:01.228+03:00  INFO 8548 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-15T21:15:01.336+03:00  INFO 8548 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-15T21:28:05.219+03:00  INFO 9364 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 9364 (C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader)
-2024-05-15T21:28:05.226+03:00  INFO 9364 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-05-15T21:28:11.622+03:00  INFO 9364 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-15T21:28:12.223+03:00  INFO 9364 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 561 ms. Found 1 JPA repository interface.
-2024-05-15T21:28:18.209+03:00  INFO 9364 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
-2024-05-15T21:28:18.330+03:00  INFO 9364 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-15T21:28:18.331+03:00  INFO 9364 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-05-15T21:28:19.032+03:00  INFO 9364 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-15T21:28:19.033+03:00  INFO 9364 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13287 ms
-2024-05-15T21:28:22.857+03:00  INFO 9364 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-15T21:28:23.598+03:00  INFO 9364 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-15T21:28:23.892+03:00  INFO 9364 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-15T21:28:28.076+03:00  INFO 9364 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-15T21:28:28.293+03:00  INFO 9364 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-15T21:28:29.602+03:00  INFO 9364 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f3f57ff
-2024-05-15T21:28:29.620+03:00  INFO 9364 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-15T21:28:30.875+03:00  WARN 9364 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-05-15T21:28:30.878+03:00  WARN 9364 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2024-05-15T21:28:38.021+03:00  INFO 9364 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-15T21:28:38.255+03:00  INFO 9364 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-15T21:28:41.645+03:00  WARN 9364 --- [Loader] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-15T21:28:45.002+03:00  INFO 9364 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
-2024-05-15T21:28:45.089+03:00  INFO 9364 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Started LoaderApplication in 44.366 seconds (process running for 58.919)
-2024-05-15T21:50:42.574+03:00  INFO 9364 --- [Loader] [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-15T21:50:42.737+03:00  INFO 9364 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-15T21:50:43.184+03:00  INFO 9364 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 444 ms
-2024-05-15T21:50:48.171+03:00  INFO 9364 --- [Loader] [http-nio-7070-exec-1] c.t.L.s.MarketingDataFacebookService     : got to thread creation
-2024-05-15T22:00:29.463+03:00  INFO 9364 --- [Loader] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-15T22:00:29.494+03:00  INFO 9364 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-15T22:00:29.520+03:00  INFO 9364 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T01:26:08.867+03:00  INFO 3704 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 3704 (C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader)
+2024-05-19T01:26:08.905+03:00  INFO 3704 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T01:26:13.159+03:00  INFO 3704 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T01:26:13.368+03:00  INFO 3704 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186 ms. Found 1 JPA repository interface.
+2024-05-19T01:26:15.388+03:00  INFO 3704 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2024-05-19T01:26:15.419+03:00  INFO 3704 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T01:26:15.420+03:00  INFO 3704 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T01:26:15.580+03:00  INFO 3704 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T01:26:15.582+03:00  INFO 3704 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6524 ms
+2024-05-19T01:26:16.106+03:00  INFO 3704 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T01:26:16.329+03:00  INFO 3704 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T01:26:16.462+03:00  INFO 3704 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T01:26:17.252+03:00  INFO 3704 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T01:26:17.368+03:00  INFO 3704 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T01:26:17.893+03:00  INFO 3704 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@208e5b23
+2024-05-19T01:26:17.898+03:00  INFO 3704 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T01:26:18.035+03:00  WARN 3704 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T01:26:18.039+03:00  WARN 3704 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-19T01:26:20.314+03:00  INFO 3704 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T01:26:20.476+03:00  INFO 3704 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T01:26:21.658+03:00  WARN 3704 --- [Loader] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19T01:26:22.834+03:00  INFO 3704 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2024-05-19T01:26:22.859+03:00  INFO 3704 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Started LoaderApplication in 15.499 seconds (process running for 21.54)
+2024-05-19T01:27:00.295+03:00  INFO 3704 --- [Loader] [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T01:27:00.297+03:00  INFO 3704 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T01:27:00.305+03:00  INFO 3704 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-19T01:27:00.942+03:00  INFO 3704 --- [Loader] [http-nio-7070-exec-1] c.t.L.s.MarketingDataFacebookService     : got to thread creation
+2024-05-19T01:31:05.312+03:00  INFO 3704 --- [Loader] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T01:31:05.316+03:00  INFO 3704 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T01:31:05.339+03:00  INFO 3704 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T01:40:21.761+03:00  INFO 18308 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 18308 (C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader)
+2024-05-19T01:40:21.765+03:00  INFO 18308 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T01:40:23.742+03:00  INFO 18308 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T01:40:23.886+03:00  INFO 18308 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2024-05-19T01:40:24.359+03:00  INFO 18308 --- [Loader] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90d41d55-564b-33eb-9930-2dbe87f7140e
+2024-05-19T01:40:25.394+03:00  INFO 18308 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2024-05-19T01:40:25.429+03:00  INFO 18308 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T01:40:25.429+03:00  INFO 18308 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T01:40:25.647+03:00  INFO 18308 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T01:40:25.648+03:00  INFO 18308 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3772 ms
+2024-05-19T01:40:26.113+03:00  INFO 18308 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T01:40:26.275+03:00  INFO 18308 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T01:40:26.492+03:00  INFO 18308 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T01:40:27.206+03:00  INFO 18308 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T01:40:27.278+03:00  INFO 18308 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T01:40:27.734+03:00  INFO 18308 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38848217
+2024-05-19T01:40:27.737+03:00  INFO 18308 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T01:40:27.822+03:00  WARN 18308 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T01:40:27.824+03:00  WARN 18308 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-19T01:40:29.622+03:00  INFO 18308 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T01:40:29.759+03:00  INFO 18308 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T01:40:30.463+03:00  WARN 18308 --- [Loader] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'markertingDataController': Unsatisfied dependency expressed through field 'securityServiceFeignClient': No qualifying bean of type 'com.tsfn.Loader.feignclient.SecurityServiceFeignClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-19T01:40:30.464+03:00  INFO 18308 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T01:40:30.466+03:00  INFO 18308 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T01:40:30.477+03:00  INFO 18308 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T01:40:30.482+03:00  INFO 18308 --- [Loader] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T01:40:30.502+03:00  INFO 18308 --- [Loader] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T01:40:30.605+03:00 ERROR 18308 --- [Loader] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field securityServiceFeignClient in com.tsfn.Loader.controller.MarkertingDataController required a bean of type 'com.tsfn.Loader.feignclient.SecurityServiceFeignClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.tsfn.Loader.feignclient.SecurityServiceFeignClient' in your configuration.
+
+2024-05-19T01:41:54.064+03:00  INFO 15752 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 15752 (C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader)
+2024-05-19T01:41:54.068+03:00  INFO 15752 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T01:41:55.742+03:00  INFO 15752 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T01:41:55.881+03:00  INFO 15752 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+2024-05-19T01:41:56.444+03:00  INFO 15752 --- [Loader] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90d41d55-564b-33eb-9930-2dbe87f7140e
+2024-05-19T01:41:57.598+03:00  INFO 15752 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2024-05-19T01:41:57.626+03:00  INFO 15752 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T01:41:57.627+03:00  INFO 15752 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T01:41:57.787+03:00  INFO 15752 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T01:41:57.788+03:00  INFO 15752 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3607 ms
+2024-05-19T01:41:58.207+03:00  INFO 15752 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T01:41:58.365+03:00  INFO 15752 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T01:41:58.453+03:00  INFO 15752 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T01:41:59.032+03:00  INFO 15752 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T01:41:59.086+03:00  INFO 15752 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T01:41:59.439+03:00  INFO 15752 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a5ce4b8
+2024-05-19T01:41:59.443+03:00  INFO 15752 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T01:41:59.528+03:00  WARN 15752 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T01:41:59.529+03:00  WARN 15752 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-19T01:42:00.924+03:00  INFO 15752 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T01:42:01.005+03:00  INFO 15752 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T01:42:01.725+03:00  WARN 15752 --- [Loader] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'markertingDataController': Unsatisfied dependency expressed through field 'securityServiceFeignClient': No qualifying bean of type 'com.tsfn.Loader.feignclient.SecurityServiceFeignClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-19T01:42:01.726+03:00  INFO 15752 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T01:42:01.730+03:00  INFO 15752 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T01:42:01.743+03:00  INFO 15752 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T01:42:01.747+03:00  INFO 15752 --- [Loader] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T01:42:01.769+03:00  INFO 15752 --- [Loader] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T01:42:01.820+03:00 ERROR 15752 --- [Loader] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field securityServiceFeignClient in com.tsfn.Loader.controller.MarkertingDataController required a bean of type 'com.tsfn.Loader.feignclient.SecurityServiceFeignClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.tsfn.Loader.feignclient.SecurityServiceFeignClient' in your configuration.
+
+2024-05-19T01:46:02.075+03:00  INFO 17436 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Starting LoaderApplication using Java 21.0.1 with PID 17436 (C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader\target\classes started by mohamad in C:\Users\mohamad\OneDrive\Desktop\mergedproject\Loader)
+2024-05-19T01:46:02.080+03:00  INFO 17436 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T01:46:04.137+03:00  INFO 17436 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T01:46:04.290+03:00  INFO 17436 --- [Loader] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interface.
+2024-05-19T01:46:05.008+03:00  INFO 17436 --- [Loader] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9419f764-8ef3-3c09-8937-b5ca4b02a6e1
+2024-05-19T01:46:06.273+03:00  INFO 17436 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7070 (http)
+2024-05-19T01:46:06.309+03:00  INFO 17436 --- [Loader] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T01:46:06.310+03:00  INFO 17436 --- [Loader] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T01:46:06.518+03:00  INFO 17436 --- [Loader] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T01:46:06.519+03:00  INFO 17436 --- [Loader] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4313 ms
+2024-05-19T01:46:07.007+03:00  INFO 17436 --- [Loader] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T01:46:07.204+03:00  INFO 17436 --- [Loader] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T01:46:07.341+03:00  INFO 17436 --- [Loader] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T01:46:08.047+03:00  INFO 17436 --- [Loader] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T01:46:08.118+03:00  INFO 17436 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T01:46:08.661+03:00  INFO 17436 --- [Loader] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ce19c86
+2024-05-19T01:46:08.665+03:00  INFO 17436 --- [Loader] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T01:46:08.770+03:00  WARN 17436 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T01:46:08.773+03:00  WARN 17436 --- [Loader] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-19T01:46:10.861+03:00  INFO 17436 --- [Loader] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T01:46:10.957+03:00  INFO 17436 --- [Loader] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T01:46:12.176+03:00  WARN 17436 --- [Loader] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19T01:46:14.826+03:00  INFO 17436 --- [Loader] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-05-19T01:46:15.032+03:00  INFO 17436 --- [Loader] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7070 (http) with context path ''
+2024-05-19T01:46:16.047+03:00  INFO 17436 --- [Loader] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-05-19T01:46:16.067+03:00  INFO 17436 --- [Loader] [main] com.tsfn.Loader.LoaderApplication        : Started LoaderApplication in 16.205 seconds (process running for 21.412)
+2024-05-19T01:46:32.407+03:00  INFO 17436 --- [Loader] [http-nio-7070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T01:46:32.408+03:00  INFO 17436 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T01:46:32.411+03:00  INFO 17436 --- [Loader] [http-nio-7070-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-19T01:46:32.611+03:00  WARN 17436 --- [Loader] [http-nio-7070-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-05-19T01:52:24.211+03:00  INFO 17436 --- [Loader] [http-nio-7070-exec-4] c.t.L.s.MarketingDataFacebookService     : got to thread creation
+2024-05-19T02:00:01.288+03:00  INFO 17436 --- [Loader] [http-nio-7070-exec-9] c.t.L.s.MarketingDataFacebookService     : got to thread creation
+2024-05-19T02:00:09.522+03:00  INFO 17436 --- [Loader] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T02:00:09.526+03:00  INFO 17436 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T02:00:09.561+03:00  INFO 17436 --- [Loader] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

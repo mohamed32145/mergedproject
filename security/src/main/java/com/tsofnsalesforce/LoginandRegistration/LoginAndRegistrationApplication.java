@@ -1,6 +1,10 @@
 package com.tsofnsalesforce.LoginandRegistration;
 
+import com.tsofnsalesforce.LoginandRegistration.Repository.AccountRepository;
 import com.tsofnsalesforce.LoginandRegistration.Repository.RoleRepository;
+import com.tsofnsalesforce.LoginandRegistration.Repository.UserRepository;
+import com.tsofnsalesforce.LoginandRegistration.model.Account;
+import com.tsofnsalesforce.LoginandRegistration.model.AppUser;
 import com.tsofnsalesforce.LoginandRegistration.model.Role;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -21,16 +25,42 @@ public class LoginAndRegistrationApplication {
 	}
 
 	@Bean
-	public CommandLineRunner runner(RoleRepository roleRepository){
+	public CommandLineRunner runner(RoleRepository roleRepository, UserRepository userRepository, AccountRepository accountRepository){
 
 		return args -> {
+			Role adminrole=Role.builder().createdDate(LocalDateTime.now()).name("ADMIN").build();
 			if(roleRepository.findAll().isEmpty()) {
 				roleRepository.save(
 						Role.builder().createdDate(LocalDateTime.now()).name("READ").build()
 				);
-				roleRepository.save(
-						Role.builder().createdDate(LocalDateTime.now()).name("ADMIN").build()
+				Account account = new Account();
+				account.setName("Example Account");
+
+				// Save the Account
+				account = accountRepository.save(account);
+
+				// Create an AppUser
+				AppUser appUser = new AppUser();
+				appUser.setFirstName("admin");
+				appUser.setLastName("admin");
+				appUser.setEmail("admin@gmail.com");
+				appUser.setPassword("1234");
+				appUser.setAccountLocked(false);
+				appUser.setEnabled(true);
+
+				// Set the Account for the AppUser
+				appUser.setAccount(account);
+				roleRepository.save(adminrole
+
 				);
+
+				// Add roles to the AppUser
+				appUser.getRoles().add(adminrole);
+
+
+				// Save the AppUser
+				userRepository.save(appUser);
+
 				roleRepository.save(
 						Role.builder().createdDate(LocalDateTime.now()).name("CREATE_ACTION").build()
 				);
@@ -44,6 +74,7 @@ public class LoginAndRegistrationApplication {
 						Role.builder().createdDate(LocalDateTime.now()).name("TRIGGER_MANUAL_SCAN").build()
 				);
 			}
+
 		};
 	}
 }

@@ -39,6 +39,7 @@ public class AuthenticationService {
     private final RoleRepository roleRepository;
     private final EmailService emailService;
     private final AccountRepository accountRepository;
+    private static int id_counter=1;
 
     @Value("${application.mailing.frontend.activation-url}")
     private String activationUrl;
@@ -98,9 +99,13 @@ public class AuthenticationService {
     }
 
     public void addAccount(AddAccountRequest request) {
+        if (id_counter==1001||id_counter==2103)
+            id_counter++;
         var account = Account.builder()
                 .name(request.getAccountName())
+                .id(id_counter)
                 .build();
+        id_counter++;
         accountRepository.save(account);
     }
 //    @Transactional

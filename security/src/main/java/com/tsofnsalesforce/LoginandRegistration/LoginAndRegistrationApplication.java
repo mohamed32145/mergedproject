@@ -34,10 +34,19 @@ public class LoginAndRegistrationApplication {
 						Role.builder().createdDate(LocalDateTime.now()).name("READ").build()
 				);
 				Account account = new Account();
-				account.setName("Example Account");
+				account.setName("custom Account 1");
+				account.setId(2103);
 
 				// Save the Account
 				account = accountRepository.save(account);
+
+				Account account2 = new Account();
+				account2.setName("custom Account 2");
+				account2.setId(1001);
+
+				// Save the Account
+				account2 = accountRepository.save(account2);
+
 
 				// Create an AppUser
 				AppUser appUser = new AppUser();

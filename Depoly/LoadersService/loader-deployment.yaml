@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loader-service-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: loader-service-app
+  template:
+    metadata:
+      labels:
+        app: loader-service-app
+    spec:
+      containers:
+      - name: loader-service-app
+        image: khasil/loader-services:v1.0
+        ports:
+        - containerPort: 7070
